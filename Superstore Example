@@ -49,3 +49,7 @@ FROM superstore
 WHERE category="Kitchen Supplies"
 
 
+4--Show how many air purifiers are in stock
+SELECT SUM(stock_quantity) AS total_air_purifiers_in_stock
+FROM superstore
+WHERE item_name = 'Air Purifier';
